@@ -1,0 +1,33 @@
+.ss_options{
+	display:none;
+	background: #eeeeee;
+	box-shadow: 0px 1px 3px 0px #878787;
+	color: #525252;
+	border-radius: 4px 0px 4px 4px;
+	max-height: 350px;
+	overflow: auto;
+	position: absolute;
+}
+.ss_options > div {
+	padding: 6px;
+	border-bottom: 1px solid #dedede;
+	cursor: pointer;
+}
+.ss_options > div:hover {
+	background: teal;
+	color: white;
+}
+.ss_options > div > div.sub:hover{ color: #cdcdcd !important; }
+.ss_options > div > div.sub {
+	color: gray;
+	font-weight: 100;
+	font-size: 12px;
+}
+.ss_selected{
+	pointer-events: none;
+	position: relative;
+	top: -31px;
+	height: 0px;
+	padding: 0px 12px;
+}
+.superselect:focus ~ .ss_selected{ display:none; }
